@@ -236,13 +236,15 @@ void initCamera() {
     cam.read();
     
     // create the overlay PGraphics here
-    // so it's exactly the size of the camera
+    // so it's exactly the   size of the camera
     faceDataOverlay = createGraphics(cam.width,cam.height);
     faceDataOverlay.beginDraw();
     faceDataOverlay.clear();
     faceDataOverlay.endDraw();  
     
     cameraInitDone = true;
+    
+    onScreenText = "";
   }
    
 }
